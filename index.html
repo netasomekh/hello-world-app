@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <title>Hello World</title>
 
-  <!-- קישור ל-CSS שמגדיר את העיצוב -->
-  <link rel="stylesheet" href="style.css">
+  <!-- קישור לקובץ ה-CSS עם cache-busting כדי לאלץ טעינה מחדש -->
+  <link rel="stylesheet" href="style.css?v=20250828a">
 </head>
 <body>
-  <!-- קונטיינר ללייאאוט ולעיצוב -->
+  <!-- קונטיינר לעיצוב -->
   <div class="container">
     <h1>Hello World 🌍</h1>
     <p class="subtitle">This is my first styled page!</p>
 
-    <!-- שדה קלט + כפתור + פסקה לתוצאה (האלמנטים שבהם ה-JS משתמש) -->
+    <!-- שדה קלט + כפתור + פסקה לתוצאה -->
     <input id="name" placeholder="הקלידי שם..." />
     <button id="greet">ברכי</button>
     <p id="greeting"></p>
   </div>
 
-  <!-- חשוב: ה-JS נטען בסוף ה-body כדי שהאלמנטים כבר יהיו בדף -->
-  <script src="script.js"></script>
+  <!-- קישור ל-JavaScript עם cache-busting כדי לאלץ טעינה מחדש -->
+  <script src="script.js?v=20250828a"></script>
 </body>
 </html>
